@@ -1,6 +1,6 @@
 FROM python:3.9.17-slim-bullseye
 
-RUN apt-get update && apt install g++ make curl -y
+RUN apt-get update && apt install g++ make curl python3-pip -y
 
 # RUN wget https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz && \
 #     tar xzf Python-3.10.8.tgz && \
