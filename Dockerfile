@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 RUN apt-get update && apt install g++ make curl wget build-essential libncursesw5-dev libssl-dev \
-     libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev-y
+     libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev -y
 
 RUN wget https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz && \
     tar xzf Python-3.10.8.tgz && \
