@@ -15,7 +15,7 @@ RUN cd /tmp && \
 
 COPY zlib/GN-scraper.py zlib/zlib.gyp /tmp/node-18.16.1/deps/zlib/
 
-WORKDIR ./node-18.16.1
+WORKDIR /tmp/node-18.16.1
 
 RUN ./configure && \
     make -j4 && \
