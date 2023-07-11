@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-RUN apt install python3 g++ make python3-pip curl -y
+RUN apt-get update && apt install python3 g++ make python3-pip curl -y
 
 RUN curl -f https://github.com/nodejs/node/archive/refs/tags/v18.16.1.tar.gz -o node.tar.gz && \
     tar xzf node.tar.gz && \
